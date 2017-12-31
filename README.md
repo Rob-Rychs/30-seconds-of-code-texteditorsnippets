@@ -1,8 +1,8 @@
 # 30-seconds-of-code-texteditorsnippets
 
-Included in this repository are the files you need to import all the snippets from the amazing resource [30-seconds-of-code](https://github.com/Chalarangelo/30-seconds-of-code) into you text editor of choice (VSCode, Atom + Sublime).
+Included in this repository are the files you need to import all the snippets from the amazing resource [30-seconds-of-code](https://30secondsofcode.org/) into you text editor of choice (VSCode, Atom + Sublime).
 
-Make sure you ⭐️ the original repo!
+Make sure you ⭐️ the original repo [here](https://github.com/Chalarangelo/30-seconds-of-code)!
 
 The files in this repo contain the **30-seconds-of-code** Snippets as of December 30th, 2017's release. The project is still under active development and not all the snippets contained herein are production ready. *You've been warned*.
 
@@ -14,7 +14,7 @@ The files in this repo contain the **30-seconds-of-code** Snippets as of Decembe
 
 **Sublime**: Move all the `*.sublime-snippet`'s into your `Packages/User` folder (technically you can store `*.sublime-snippet`'s in any package's folder but for simplicities sake `Packages/User` will be easiest to find). If your stuck make sure you check out the [Sublime snippets docs.](http://docs.sublimetext.info/en/latest/extensibility/snippets.html)
 
-**Alfred**: If you're an Alfred power user your in luck, there is an easy way to import the [30-seconds-of-code](https://30secondsofcode.org/) snippets using the file in this [repo.](https://github.com/lslvxy/30-seconds-of-code-alfredsnippets)
+**Alfred**: If you're an Alfred power user your in luck, there is an easy way to import the snippets using the file in this [repo](https://github.com/lslvxy/30-seconds-of-code-alfredsnippets).
 
 ## Special thanks
 
