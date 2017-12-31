@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[const zipObject = (props, values) =>
+  props.reduce((obj, prop, index) => ((obj[prop] = values[index]), obj), {});]]></content>
+	<description>Given an array of valid property identifiers and an array of values, return an object associating the properties to the values.  Since an object can have undefined values but not undefined property pointers, the array of properties is used to decide the structure of the resulting object using `Array.reduce()`.</description>
+	<tabTrigger>zipObject</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

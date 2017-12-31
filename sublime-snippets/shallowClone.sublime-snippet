@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[const shallowClone = obj => Object.assign({}, obj);]]></content>
+	<description>Creates a shallow clone of an object.  Use `Object.assign()` and an empty object (`{}`) to create a shallow clone of the original.</description>
+	<tabTrigger>shallowClone</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

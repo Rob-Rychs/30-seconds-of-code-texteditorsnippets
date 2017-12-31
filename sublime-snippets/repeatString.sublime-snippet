@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[const repeatString = (str = '', num = 2) => {
+  return num >= 0 ? str.repeat(num) : str;
+};]]></content>
+	<description>Repeats a string n times using `String.repeat()`  If no string is provided the default is `""` and the default number of times is 2.</description>
+	<tabTrigger>repeatString</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[const chainAsync = fns => {
+  let curr = 0;
+  const next = () => fns[curr++](next);
+  next();
+};]]></content>
+	<description>Chains asynchronous functions.  Loop through an array of functions containing asynchronous events, calling `next` when each asynchronous event has completed.</description>
+	<tabTrigger>chainAsync</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

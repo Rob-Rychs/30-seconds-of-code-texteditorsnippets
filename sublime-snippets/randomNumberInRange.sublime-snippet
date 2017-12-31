@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[const randomNumberInRange = (min, max) => Math.random() * (max - min) + min;]]></content>
+	<description>Returns a random number in the specified range.  Use `Math.random()` to generate a random value, map it to the desired range using multiplication.</description>
+	<tabTrigger>randomNumberInRange</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

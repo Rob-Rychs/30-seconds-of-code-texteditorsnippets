@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[const runPromisesInSeries = ps => ps.reduce((p, next) => p.then(next), Promise.resolve());]]></content>
+	<description>Runs an array of promises in series.  Use `Array.reduce()` to create a promise chain, where each promise returns the next promise when resolved.</description>
+	<tabTrigger>runPromisesInSeries</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

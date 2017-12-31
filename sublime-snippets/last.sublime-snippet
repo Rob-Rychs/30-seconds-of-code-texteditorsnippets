@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[const last = arr => arr[arr.length - 1];]]></content>
+	<description>Returns the last element in an array.  Use `arr.length - 1` to compute the index of the last element of the given array and returning it.</description>
+	<tabTrigger>last</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

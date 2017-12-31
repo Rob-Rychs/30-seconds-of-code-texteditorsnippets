@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[const hasClass = (el, className) => el.classList.contains(className);]]></content>
+	<description>Returns `true` if the element has the specified class, `false` otherwise.  Use `element.classList.contains()` to check if the element has the specified class.</description>
+	<tabTrigger>hasClass</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

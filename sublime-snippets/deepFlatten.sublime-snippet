@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[const deepFlatten = arr => [].concat(...arr.map(v => (Array.isArray(v) ? deepFlatten(v) : v)));]]></content>
+	<description>Deep flattens an array.  Use recursion. Use `Array.concat()` with an empty array (`[]`) and the spread operator (`...`) to flatten an array. Recursively flatten each element that is an array.</description>
+	<tabTrigger>deepFlatten</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

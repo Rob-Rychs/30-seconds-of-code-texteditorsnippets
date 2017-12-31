@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[const fs = require('fs');
+const readFileLines = filename =>
+  fs
+    .readFileSync(filename)
+    .toString('UTF8')
+    .split('\n');]]></content>
+	<description>Returns an array of lines from the specified file.  Use `readFileSync` function in `fs` node package to create a `Buffer` from a file. convert buffer to string using `toString(encoding)` function. creating an array from contents of file by `split`ing file content line by line (each `\n`).</description>
+	<tabTrigger>readFileLines</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

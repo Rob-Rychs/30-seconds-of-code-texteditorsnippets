@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[const show = (...el) => [...el].forEach(e => (e.style.display = ''));]]></content>
+	<description>Shows all the elements specified.  Use the spread operator (`...`) and `Array.forEach()` to clear the `display` property for each element specified.</description>
+	<tabTrigger>show</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

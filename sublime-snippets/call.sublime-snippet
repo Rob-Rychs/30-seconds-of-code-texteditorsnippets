@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[const call = (key, ...args) => context => context[key](...args);]]></content>
+	<description>Given a key and a set of arguments, call them when given a context. Primarily useful in composition.  Use a closure to call a stored key with stored arguments.</description>
+	<tabTrigger>call</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

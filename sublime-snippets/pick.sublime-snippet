@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[const pick = (obj, arr) =>
+  arr.reduce((acc, curr) => (curr in obj && (acc[curr] = obj[curr]), acc), {});]]></content>
+	<description>Picks the key-value pairs corresponding to the given keys from an object.  Use `Array.reduce()` to convert the filtered/picked keys back to an object with the corresponding key-value pair if the key exists in the obj.</description>
+	<tabTrigger>pick</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

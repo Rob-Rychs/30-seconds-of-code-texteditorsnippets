@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[const escapeRegExp = str => str.replace(/[.*+?^${}()|[\]\\]/g, '\\\$&');]]></content>
+	<description>Escapes a string to use in a regular expression.  Use `replace()` to escape special characters.</description>
+	<tabTrigger>escapeRegExp</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

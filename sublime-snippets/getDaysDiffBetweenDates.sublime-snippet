@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[const getDaysDiffBetweenDates = (dateInitial, dateFinal) =>
+  (dateFinal - dateInitial) / (1000 * 3600 * 24);]]></content>
+	<description>Returns the difference (in days) between two dates.  Calculate the difference (in days) between two `Date` objects.</description>
+	<tabTrigger>getDaysDiffBetweenDates</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

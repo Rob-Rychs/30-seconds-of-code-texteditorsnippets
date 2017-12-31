@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[const isNumber = val => typeof val === 'number';]]></content>
+	<description>Checks if the given argument is a number.  Use `typeof` to check if a value is classified as a number primitive.</description>
+	<tabTrigger>isNumber</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

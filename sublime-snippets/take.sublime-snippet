@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[const take = (arr, n = 1) => arr.slice(0, n);]]></content>
+	<description>Returns an array with n elements removed from the beginning.  Use `Array.slice()` to create a slice of the array with `n` elements taken from the beginning.</description>
+	<tabTrigger>take</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

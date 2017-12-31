@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[const takeRight = (arr, n = 1) => arr.slice(arr.length - n, arr.length);]]></content>
+	<description>Returns an array with n elements removed from the end.  Use `Array.slice()` to create a slice of the array with `n` elements taken from the end.</description>
+	<tabTrigger>takeRight</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

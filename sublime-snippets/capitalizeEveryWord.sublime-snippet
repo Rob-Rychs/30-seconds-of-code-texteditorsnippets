@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[const capitalizeEveryWord = str => str.replace(/\b[a-z]/g, char => char.toUpperCase());]]></content>
+	<description>Capitalizes the first letter of every word in a string.  Use `replace()` to match the first character of each word and `toUpperCase()` to capitalize it.</description>
+	<tabTrigger>capitalizeEveryWord</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[const everyNth = (arr, nth) => arr.filter((e, i) => i % nth === nth - 1);]]></content>
+	<description>Returns every nth element in an array.  Use `Array.filter()` to create a new array that contains every nth element of a given array.</description>
+	<tabTrigger>everyNth</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));]]></content>
+	<description>Delays the execution of an asynchronous function.  Delay executing part of an `async` function, by putting it to sleep, returning a `Promise`.</description>
+	<tabTrigger>sleep</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

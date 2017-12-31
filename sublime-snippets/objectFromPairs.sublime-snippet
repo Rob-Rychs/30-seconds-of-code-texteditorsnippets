@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[const objectFromPairs = arr => arr.reduce((a, v) => ((a[v[0]] = v[1]), a), {});]]></content>
+	<description> Creates an object from the given key-value pairs.  Use `Array.reduce()` to create and combine key-value pairs.</description>
+	<tabTrigger>objectFromPairs</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

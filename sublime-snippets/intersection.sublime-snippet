@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[const intersection = (a, b) => {
+  const s = new Set(b);
+  return a.filter(x => s.has(x));
+};]]></content>
+	<description>Returns a list of elements that exist in both arrays.  Create a `Set` from `b`, then use `Array.filter()` on `a` to only keep values contained in `b`.</description>
+	<tabTrigger>intersection</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

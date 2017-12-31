@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[const flatten = arr => [].concat(...arr);]]></content>
+	<description>Flattens an array.  Use a new array and concatenate it with the spread input array causing a shallow de-nesting of any contained arrays.</description>
+	<tabTrigger>flatten</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

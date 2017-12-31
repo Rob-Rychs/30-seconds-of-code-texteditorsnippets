@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[const hide = (...el) => [...el].forEach(e => (e.style.display = 'none'));]]></content>
+	<description>Hides all the elements specified.  Use the spread operator (`...`) and `Array.forEach()` to apply `display: none` to each element specified.</description>
+	<tabTrigger>hide</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

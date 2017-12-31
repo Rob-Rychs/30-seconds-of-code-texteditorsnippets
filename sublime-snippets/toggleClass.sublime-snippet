@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[const toggleClass = (el, className) => el.classList.toggle(className);]]></content>
+	<description>Toggle a class for an element.  Use `element.classList.toggle()` to toggle the specified class for the element.</description>
+	<tabTrigger>toggleClass</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

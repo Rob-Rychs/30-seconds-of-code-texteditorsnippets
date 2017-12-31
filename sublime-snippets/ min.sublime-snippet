@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[const min = arr => Math.min(...[].concat(...arr));]]></content>
+	<description>Returns the minimum value in an array.  Use `Math.min()` combined with the spread operator (`...`) to get the minimum value in the array.</description>
+	<tabTrigger>min</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

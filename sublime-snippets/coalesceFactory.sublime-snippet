@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[const coalesceFactory = valid => (...args) => args.find(valid);]]></content>
+	<description>Returns a customized coalesce function that returns the first argument that returns `true` from the provided argument validation function.  Use `Array.find()` to return the first argument that returns `true` from the provided argument validation function.</description>
+	<tabTrigger>coalesceFactory</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

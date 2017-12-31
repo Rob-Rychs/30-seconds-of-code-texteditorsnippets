@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[const initializeArrayWithValues = (n, value = 0) => Array(n).fill(value);]]></content>
+	<description>Initializes and fills an array with the specified values.  Use `Array(n)` to create an array of the desired length, `fill(v)` to fill it with the desired values. You can omit `value` to use a default value of `0`.</description>
+	<tabTrigger>initializeArrayWithValues</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[const arrayToHtmlList = (arr, listID) =>
+  arr.map(item => (document.querySelector('#' + listID).innerHTML += `<li>${item}</li>`));]]></content>
+	<description>Converts the given array elements into `<li>` tags and appends them to the list of the given id. Use `Array.map()` and `document.querySelector()` to create a list of html tags.</description>
+	<tabTrigger>arrayToHtmlList</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

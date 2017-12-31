@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[const isDivisible = (dividend, divisor) => dividend % divisor === 0;]]></content>
+	<description>Checks if the first numeric argument is divisible by the second one.  Use the modulo operator (`%`) to check if the remainder is equal to `0`.</description>
+	<tabTrigger>isDivisible</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

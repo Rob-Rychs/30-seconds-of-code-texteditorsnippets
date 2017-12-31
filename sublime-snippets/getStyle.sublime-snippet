@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[const getStyle = (el, ruleName) => getComputedStyle(el)[ruleName];]]></content>
+	<description>Returns the value of a CSS rule for the specified element.  Use `Window.getComputedStyle()` to get the value of the CSS rule for the specified element.</description>
+	<tabTrigger>getStyle</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

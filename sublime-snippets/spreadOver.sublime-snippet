@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[const spreadOver = fn => argsArr => fn(...argsArr);]]></content>
+	<description>Takes a variadic function and returns a closure that accepts an array of arguments to map to the inputs of the function.  Use closures and the spread operator (`...`) to map the array of arguments to the inputs of the function.</description>
+	<tabTrigger>spreadOver</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

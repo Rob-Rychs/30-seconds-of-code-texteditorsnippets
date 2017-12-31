@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[const tail = arr => (arr.length > 1 ? arr.slice(1) : arr);]]></content>
+	<description>Returns all elements in an array except for the first one.  Return `arr.slice(1)` if the array's `length` is more than `1`, otherwise, return the whole array.</description>
+	<tabTrigger>tail</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

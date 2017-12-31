@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[const splitLines = str => str.split(/\r?\n/);]]></content>
+	<description>Splits a multiline string into an array of lines.  Use `String.split()` and a regular expression to match line breaks and create an array.</description>
+	<tabTrigger>splitLines</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

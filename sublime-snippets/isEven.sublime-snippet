@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[const isEven = num => num % 2 === 0;]]></content>
+	<description>Returns `true` if the given number is even, `false` otherwise.  Checks whether a number is odd or even using the modulo (`%`) operator. Returns `true` if the number is even, `false` if the number is odd.</description>
+	<tabTrigger>isEven</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

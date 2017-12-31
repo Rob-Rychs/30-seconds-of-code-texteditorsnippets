@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[const isString = val => typeof val === 'string';]]></content>
+	<description>Checks if the given argument is a string.  Use `typeof` to check if a value is classified as a string primitive.</description>
+	<tabTrigger>isString</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

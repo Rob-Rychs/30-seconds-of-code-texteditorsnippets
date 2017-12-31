@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[const functionName = fn => (console.debug(fn.name), fn);]]></content>
+	<description>Logs the name of a function.  Use `console.debug()` and the `name` property of the passed method to log the method's name to the `debug` channel of the console.</description>
+	<tabTrigger>functionName</tabTrigger>
+	<scope>source.js</scope>
+</snippet>
