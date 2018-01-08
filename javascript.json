@@ -231,7 +231,7 @@
   },
   "snippet-fromCamelCase": {
     "prefix": "fromCamelCase",
-    "body": "const fromCamelCase = (str, separator = '_') =>\n  str\n    .replace(/([a-z\d])([A-Z])/g, '$1' + separator + '$2')\n    .replace(/([A-Z]+)([A-Z][a-z\d]+)/g, '$1' + separator + '$2')\n    .toLowerCase();",
+    "body": "const fromCamelCase = (str, separator = '_') =>\n  str\n    .replace(/([a-z\\d])([A-Z])/g, '\\$1' + separator + '\\$2')\n    .replace(/([A-Z]+)([A-Z][a-z\\d]+)/g, '\\$1' + separator + '\\$2')\n    .toLowerCase();",
     "description": "Converts a string from camelcase.  Use `replace()` to remove underscores, hyphens, and spaces and convert words to camelcase. Omit the second argument to use a default separator of `_`."
   },
   "snippet-functionName": {
@@ -456,7 +456,7 @@
   },
   "snippet-palindrome": {
     "prefix": "palindrome",
-    "body": "const palindrome = str => {\n  const s = str.toLowerCase().replace(/[\W_]/g, '');\n  return (\n    s ===\n    s\n      .split('')\n      .reverse()\n      .join('')\n  );\n};",
+    "body": "const palindrome = str => {\n  const s = str.toLowerCase().replace(/[\\W_]/g, '');\n  return (\n    s ===\n    s\n      .split('')\n      .reverse()\n      .join('')\n  );\n};",
     "description": "Returns `true` if the given string is a palindrome, `false` otherwise.  Convert string `toLowerCase()` and use `replace()` to remove non-alphanumeric characters from it. Then, `split('')` into individual characters, `reverse()`, `join('')` and compare to the original, unreversed string, after converting it `tolowerCase()`."
   },
   "snippet-percentile": {
@@ -756,7 +756,7 @@
   },
   "snippet-yesNo": {
     "prefix": "yesNo",
-    "body": "const yesNo = (val, def = false) =>\n  /^(y|yes)\$/i.test(val) ? true : /^(n|no)\$/i.test(val) ? false : def;",
+    "body": "const yesNo = (val, def = false) =>\n  /^(y|yes)\\$/i.test(val) ? true : /^(n|no)\\$/i.test(val) ? false : def;",
     "description": "Returns `true` if the string is `y`/`yes` or `false` if the string is `n`/`no`.  Use `RegExp.test()` to check if the string evaluates to `y/yes` or `n/no`. Omit the second argument, `def` to set the default answer as `no`."
   },
   "snippet-zip": {
