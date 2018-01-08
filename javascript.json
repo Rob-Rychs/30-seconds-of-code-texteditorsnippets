@@ -181,7 +181,7 @@
   },
   "snippet-escapeRegExp": {
     "prefix": "escapeRegExp",
-    "body": "const escapeRegExp = str => str.replace(/[.*+?^${}()|[\]\\]/g, '\\\$&');",
+    "body": "const escapeRegExp = str => str.replace(/[.*+?^${}()|[\\]\\\\\\]/g, '\\\\\\\\$&');",
     "description": "Escapes a string to use in a regular expression.  Use `replace()` to escape special characters."
   },
   "snippet-everyNth": {
