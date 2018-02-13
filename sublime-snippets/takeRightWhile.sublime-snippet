@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[const takeRightWhile = (arr, func) => {
+  for (let i of arr.reverse().keys())
+    if (func(arr[i])) return arr.reverse().slice(arr.length - i, arr.length);
+  return arr;
+};]]></content>
+	<description>Removes elements from the end of an array until the passed function returns `true`. Returns the removed elements.  Loop through the array, using a `for...of` loop over `Array.keys()` until the returned value from the function is `true`. Return the removed elements, using `Array.reverse()` and `Array.slice()`.</description>
+	<tabTrigger> takeRightWhile</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

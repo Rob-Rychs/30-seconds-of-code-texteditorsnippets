@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[const isValidJSON = obj => {
+  try {
+    JSON.parse(obj);
+    return true;
+  } catch (e) {
+    return false;
+  }
+};]]></content>
+	<description>Checks if the provided argument is a valid JSON.  Use `JSON.parse()` and a `try... catch` block to check if the provided argument is a valid JSON.</description>
+	<tabTrigger>isValidJSON</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

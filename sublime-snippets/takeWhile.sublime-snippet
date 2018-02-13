@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[const takeWhile = (arr, func) => {
+  for (let i of arr.keys()) if (func(arr[i])) return arr.slice(0, i);
+  return arr;
+};]]></content>
+	<description>Removes elements in an array until the passed function returns `true`. Returns the removed elements.  Loop through the array, using a `for...of` loop over `Array.keys()` until the returned value from the function is `true`. Return the removed elements, using `Array.slice()`.</description>
+	<tabTrigger>takeWhile</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

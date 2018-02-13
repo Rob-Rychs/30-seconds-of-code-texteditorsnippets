@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[```js
+const isObjectLike = val => val !== null && typeof val === 'object';]]></content>
+	<description>Checks if a value is object-like.  Check if the provided value is not `null` and its `typeof` is equal to `'object'`.</description>
+	<tabTrigger>isObjectLike</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[const removeNonASCII = str => str.replace(/[^\x20-\x7E]/g, '');]]></content>
+	<description>Removes non-printable ASCII characters.  Use a regular expression to remove non-printable ASCII characters.</description>
+	<tabTrigger>removeNonASCII</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

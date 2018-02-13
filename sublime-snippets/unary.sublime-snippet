@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[const unary = fn => val => fn(val);]]></content>
+	<description>Creates a function that accepts up to one argument, ignoring any additional arguments.  Call the provided function, `fn`, with just the first argument given.</description>
+	<tabTrigger>unary</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

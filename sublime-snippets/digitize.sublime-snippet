@@ -1,6 +1,6 @@
 <snippet>
-	<content><![CDATA[const digitize = n => [...('' + n)].map(i => parseInt(i));]]></content>
-	<description>Converts a number to an array of digits.  Convert the number to a string, using spread operators in ES6(`[...string]`) build an array. Use `Array.map()` and `parseInt()` to transform each value to an integer.</description>
+	<content><![CDATA[const digitize = n => [...`${n}`].map(i => parseInt(i));]]></content>
+	<description>Converts a number to an array of digits.  Convert the number to a string, using the spread operator (`...`) to build an array. Use `Array.map()` and `parseInt()` to transform each value to an integer.</description>
 	<tabTrigger>digitize</tabTrigger>
 	<scope>source.js</scope>
 </snippet>

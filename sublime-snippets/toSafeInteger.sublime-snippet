@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[const toSafeInteger = num =>
+  Math.round(Math.max(Math.min(num, Number.MAX_SAFE_INTEGER), Number.MIN_SAFE_INTEGER));]]></content>
+	<description>Converts a value to a safe integer.  Use `Math.max()` and `Math.min()` to find the closest safe value. Use `Math.round()` to convert to an integer.</description>
+	<tabTrigger>toSafeInteger</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[const transform = (obj, fn, acc) => Object.keys(obj).reduce((a, k) => fn(a, obj[k], k, obj), acc);]]></content>
+	<description>Applies a function against an accumulator and each key in the object (from left to right).  Use `Object.keys(obj)` to iterate over each key in the object, `Array.reduce()` to call the apply the specified function against the given accumulator.</description>
+	<tabTrigger>transform</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

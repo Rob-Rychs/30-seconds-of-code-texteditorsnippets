@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[const matches = (obj, source) =>
+  Object.keys(source).every(key => obj.hasOwnProperty(key) && obj[key] === source[key]);]]></content>
+	<description>Compares two objects to determine if the first one contains equivalent property values to the second one.  Use `Object.keys(source)` to get all the keys of the second object, then `Array.every()`, `Object.hasOwnProperty()` and strict comparison to determine if all keys exist in the first object and have the same values.</description>
+	<tabTrigger>matches</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

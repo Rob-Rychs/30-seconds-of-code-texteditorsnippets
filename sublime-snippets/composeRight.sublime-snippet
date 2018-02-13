@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[const composeRight = (...fns) => fns.reduce((f, g) => (...args) => g(f(...args)));]]></content>
+	<description>Performs left-to-right function composition.  Use `Array.reduce()` to perform left-to-right function composition. The first (leftmost) function can accept one or more arguments; the remaining functions must be unary.</description>
+	<tabTrigger>composeRight</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

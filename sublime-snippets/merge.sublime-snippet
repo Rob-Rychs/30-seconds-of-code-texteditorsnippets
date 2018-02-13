@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[const merge = (...objs) =>
+  [...objs].reduce(
+    (acc, obj) =>
+      Object.keys(obj).reduce((a, k) => {
+        acc[k] = acc.hasOwnProperty(k) ? [].concat(acc[k]).concat(obj[k]) : obj[k];
+        return acc;
+      }, {}),
+    {}
+  );]]></content>
+	<description>Creates a new object from the combination of two or more objects.  Use `Array.reduce()` combined with `Object.keys(obj)` to iterate over all objects and keys. Use `hasOwnProperty()` and `Array.concat()` to append values for keys existing in multiple objects.</description>
+	<tabTrigger>merge</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

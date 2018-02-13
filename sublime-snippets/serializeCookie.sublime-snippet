@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[const serializeCookie = (name, val) => `${encodeURIComponent(name)}=${encodeURIComponent(val)}`;]]></content>
+	<description> Serialize a cookie name-value pair into a Set-Cookie header string.  Use template literals and `encodeURIComponent()` to create the appropriate string.</description>
+	<tabTrigger>serializeCookie</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

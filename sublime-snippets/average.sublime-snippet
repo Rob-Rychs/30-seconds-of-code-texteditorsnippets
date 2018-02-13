@@ -1,9 +1,6 @@
 <snippet>
-	<content><![CDATA[const average = (...arr) => {
-  const nums = [].concat(...arr);
-  return nums.reduce((acc, val) => acc + val, 0) / nums.length;
-};]]></content>
-	<description>Returns the average of an of two or more numbers/arrays. Use `Array.reduce()` to add each value to an accumulator, initialized with a value of `0`, divide by the `length` of the array.</description>
+	<content><![CDATA[const average = (...nums) => [...nums].reduce((acc, val) => acc + val, 0) / nums.length;]]></content>
+	<description>Returns the average of two or more numbers.  Use `Array.reduce()` to add each value to an accumulator, initialized with a value of `0`, divide by the `length` of the array.</description>
 	<tabTrigger>average</tabTrigger>
 	<scope>source.js</scope>
 </snippet>

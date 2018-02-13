@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[const uniqueElements = arr => [...new Set(arr)];]]></content>
+	<description>Returns all unique values of an array.  Use ES6 `Set` and the `...rest` operator to discard all duplicated values.</description>
+	<tabTrigger>uniqueElements</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

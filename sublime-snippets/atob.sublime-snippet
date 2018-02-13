@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[const atob = str => new Buffer(str, 'base64').toString('binary');]]></content>
+	<description>Decodes a string of data which has been encoded using base-64 encoding.  Create a `Buffer` for the given string with base-64 encoding and use `Buffer.toString('binary')` to return the decoded string.</description>
+	<tabTrigger>atob</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

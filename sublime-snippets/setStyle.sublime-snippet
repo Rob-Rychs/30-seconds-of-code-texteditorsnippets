@@ -1,6 +1,6 @@
 <snippet>
-	<content><![CDATA[const setStyle = (el, ruleName, value) => (el.style[ruleName] = value);]]></content>
-	<description>Sets the value of a CSS rule for the specified element.  Use `element.style` to set the value of the CSS rule for the specified element to `value`.</description>
+	<content><![CDATA[const setStyle = (el, ruleName, val) => (el.style[ruleName] = val);]]></content>
+	<description>Sets the value of a CSS rule for the specified element.  Use `element.style` to set the value of the CSS rule for the specified element to `val`.</description>
 	<tabTrigger>setStyle</tabTrigger>
 	<scope>source.js</scope>
 </snippet>

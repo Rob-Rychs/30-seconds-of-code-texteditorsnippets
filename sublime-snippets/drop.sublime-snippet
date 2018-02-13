@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[const drop = (arr, n = 1) => arr.slice(n);]]></content>
+	<description>Returns a new array with `n` elements removed from the left.  Use `Array.slice()` to slice the remove the specified number of elements from the left.</description>
+	<tabTrigger>drop</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

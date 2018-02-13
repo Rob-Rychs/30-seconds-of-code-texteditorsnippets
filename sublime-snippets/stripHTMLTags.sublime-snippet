@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[const stripHTMLTags = str => str.replace(/<[^>]*>/g, '');]]></content>
+	<description>Removes HTML/XML tags from string.  Use a regular expression to remove HTML/XML tags from a string.</description>
+	<tabTrigger>stripHTMLTags</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

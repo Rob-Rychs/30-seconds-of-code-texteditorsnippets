@@ -1,0 +1,19 @@
+<snippet>
+	<content><![CDATA[const crypto = require('crypto');
+const hashNode = val =>
+  new Promise(resolve =>
+    setTimeout(
+      () =>
+        resolve(
+          crypto
+            .createHash('sha256')
+            .update(val)
+            .digest('hex')
+        ),
+      0
+    )
+  );]]></content>
+	<description>Creates a hash for a value using the [SHA-256](https://en.wikipedia.org/wiki/SHA-2) algorithm. Returns a promise.  Use `crypto` API to create a hash for the given value.</description>
+	<tabTrigger>hashNode</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

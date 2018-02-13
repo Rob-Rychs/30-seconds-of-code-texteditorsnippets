@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[const intersectionWith = (a, b, comp) => a.filter(x => b.findIndex(y => comp(x, y)) !== -1);]]></content>
+	<description>Returns a list of elements that exist in both arrays, using a provided comparator function.  Use `Array.filter()` and `Array.findIndex()` in combination with the provided comparator to determine intersecting values.</description>
+	<tabTrigger>intersectionWith</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[const longestItem = (...vals) => [...vals].sort((a, b) => b.length - a.length)[0];]]></content>
+	<description>Takes any number of iterable objects or objects with a `length` property and returns the longest one.  Use `Array.sort()` to sort all arguments by `length`, return the first (longest) one.</description>
+	<tabTrigger>longestItem</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

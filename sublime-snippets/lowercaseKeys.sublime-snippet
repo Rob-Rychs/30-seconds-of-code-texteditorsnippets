@@ -5,6 +5,6 @@
     return acc;
   }, {});]]></content>
 	<description>Creates a new object from the specified object, where all the keys are in lowercase.  Use `Object.keys()` and `Array.reduce()` to create a new object from the specified object. Convert each key in the original object to lowercase, using `String.toLowerCase()`.</description>
-	<tabTrigger>lowercaseKays</tabTrigger>
+	<tabTrigger>lowercaseKeys</tabTrigger>
 	<scope>source.js</scope>
 </snippet>

@@ -4,7 +4,7 @@ Included in this repository are the files you need to import all the snippets fr
 
 Make sure you ⭐️ the original repo [here](https://github.com/Chalarangelo/30-seconds-of-code)!
 
-The files in this repo contain the **30-seconds-of-code** Snippets as of December 30th, 2017's release. The project is still under active development and not all the snippets contained herein are production ready. *You've been warned*.
+The files in this repo contain the **30-seconds-of-code** Snippets as of February 1st, 2018's release. The project is still under active development and not all the snippets contained herein are production ready. *You've been warned*.
 
 ## How to import the snippets
 
@@ -16,9 +16,10 @@ The files in this repo contain the **30-seconds-of-code** Snippets as of Decembe
 
 **Alfred**: If you're an Alfred powerpack user your in luck, there is an easy way to import the snippets using the file in this [repo](https://github.com/lslvxy/30-seconds-of-code-alfredsnippets).
 
-**NPM**: You can of course access all of these snippets and more with the official 30-seconds-of-code [npm](https://www.npmjs.com/package/30-seconds-of-code) package by running `npm install 30-seconds-of-code`.
+**NPM**: You can of course access all of these snippets and more with the 30-seconds-of-code [npm](https://www.npmjs.com/package/30-seconds-of-code) package by running `npm install 30-seconds-of-code` or the tsoc [npm](https://www.npmjs.com/package/tsoc) package by running `npm install tsoc`.
 
 After the package is installed you may access a snippet(s) with the following notation for **node.js**: `import { snippetName, otherSnippet } from '_30s'` and/or **javascript**: `const { snippetName, otherSnippet } = require('_30s')`
+
 ## Special thanks
 
 Mad props go out to the core team and all the contributors at [30-seconds-of-code](https://github.com/Chalarangelo/30-seconds-of-code) who have worked hard putting these snippets together. 🙏

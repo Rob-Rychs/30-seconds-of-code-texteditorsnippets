@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[const is = (type, val) => val instanceof type;]]></content>
+	<description>Checks if the provided value is of the specified type (doesn't work with literals).  Use the `instanceof` operator to check if the provided value is of the specified `type`.</description>
+	<tabTrigger>is</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

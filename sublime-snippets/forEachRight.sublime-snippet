@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[const forEachRight = (arr, callback) =>
+  arr
+    .slice(0)
+    .reverse()
+    .forEach(callback);]]></content>
+	<description>Executes a provided function once for each array element, starting from the array's last element.  Use `Array.slice(0)` to clone the given array, `Array.reverse()` to reverse it and `Array.forEach()` to iterate over the reversed array.</description>
+	<tabTrigger>forEachRight</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

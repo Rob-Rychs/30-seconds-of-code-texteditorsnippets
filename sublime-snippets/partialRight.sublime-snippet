@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[const partialRight = (fn, ...partials) => (...args) => fn(...args, ...partials);]]></content>
+	<description>Creates a function that invokes `fn` with `partials` appended to the arguments it receives.  Use the spread operator (`...`) to append `partials` to the list of arguments of `fn`.</description>
+	<tabTrigger>partailRight</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

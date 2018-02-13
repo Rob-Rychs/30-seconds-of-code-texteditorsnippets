@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[const xProd = (a, b) => a.reduce((acc, x) => acc.concat(b.map(y => [x, y])), []);]]></content>
+	<description>Creates a new array out of the two supplied by creating each possible pair from the arrays.  Use `Array.reduce()`, `Array.map()` and `Array.concat()` to produce every possible pair from the elements of the two arrays and save them in an array.</description>
+	<tabTrigger>xProd</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

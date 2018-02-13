@@ -1,6 +1,0 @@
-<snippet>
-	<content><![CDATA[const isArray = val => !!val && Array.isArray(val);]]></content>
-	<description>Checks if the given argument is an array.  Use `Array.isArray()` to check if a value is classified as an array.</description>
-	<tabTrigger>isArray</tabTrigger>
-	<scope>source.js</scope>
-</snippet>

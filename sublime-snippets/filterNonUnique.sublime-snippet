@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[const filterNonUnique = arr => arr.filter(i => arr.indexOf(i) === arr.lastIndexOf(i));]]></content>
 	<description>Filters out the non-unique values in an array.  Use `Array.filter()` for an array containing only the unique values.</description>
-	<tabTrigger>filterNonUnique</tabTrigger>
+	<tabTrigger>filterUnique</tabTrigger>
 	<scope>source.js</scope>
 </snippet>

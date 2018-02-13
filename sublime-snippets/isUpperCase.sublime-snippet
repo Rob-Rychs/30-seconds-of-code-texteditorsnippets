@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[const isUpperCase = str => str === str.toUpperCase();]]></content>
+	<description>Checks if a string is upper case.  Convert the given string to upper case, using `String.toUpperCase()` and compare it to the original.</description>
+	<tabTrigger>isUpperCase</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[const bindAll = (obj, ...fns) =>
+  fns.forEach(
+    fn =>
+      (obj[fn] = function() {
+        return fn.apply(obj);
+      })
+  );]]></content>
+	<description>Use `Array.forEach()` to return a `function` that uses `Function.apply()` to apply the given context (`obj`) to `fn` for each function specified.</description>
+	<tabTrigger>bindAll</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

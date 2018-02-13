@@ -1,5 +1,6 @@
 <snippet>
-	<content><![CDATA[const fs = require('fs');
+	<content><![CDATA[```js
+const fs = require('fs');
 const JSONToFile = (obj, filename) =>
   fs.writeFile(`${filename}.json`, JSON.stringify(obj, null, 2));]]></content>
 	<description>Writes a JSON object to a file.  Use `fs.writeFile()`, template literals and `JSON.stringify()` to write a `json` object to a `.json` file.</description>

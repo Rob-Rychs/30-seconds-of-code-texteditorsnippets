@@ -1,6 +1,6 @@
 <snippet>
-	<content><![CDATA[const differenceWith = (arr, val, comp) => arr.filter(a => !val.find(b => comp(a, b)));]]></content>
-	<description>Filters out all values from an array for which the comparator function does not return `true`.  Use `Array.filter()` and `Array.find()` to find the appropriate values.</description>
+	<content><![CDATA[const differenceWith = (arr, val, comp) => arr.filter(a => val.findIndex(b => comp(a, b)) === -1);]]></content>
+	<description>Filters out all values from an array for which the comparator function does not return `true`.  Use `Array.filter()` and `Array.findIndex()` to find the appropriate values.</description>
 	<tabTrigger>differenceWith</tabTrigger>
 	<scope>source.js</scope>
 </snippet>

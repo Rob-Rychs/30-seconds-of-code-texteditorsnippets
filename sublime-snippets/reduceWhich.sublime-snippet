@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[const reduceWhich = (arr, comparator = (a, b) => a - b) =>
+  arr.reduce((a, b) => (comparator(a, b) >= 0 ? b : a));]]></content>
+	<description>Returns the minimum/maximum value of an array, after applying the provided function to set comparing rule.  Use `Array.reduce()` in combination with the `comparator` function to get the appropriate element in the array. You can omit the second parameter, `comparator`, to use the default one that returns the minimum element in the array.</description>
+	<tabTrigger>reduceWhich</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

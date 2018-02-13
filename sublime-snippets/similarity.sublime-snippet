@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[const similarity = (arr, values) => arr.filter(v => values.includes(v));]]></content>
-	<description>Returns an array of elements that appear in both arrays.  Use `filter()` to remove values that are not part of `values`, determined using `includes()`.</description>
+	<description>Returns an array of elements that appear in both arrays.  Use `Array.filter()` to remove values that are not part of `values`, determined using `Array.includes()`.</description>
 	<tabTrigger>similarity</tabTrigger>
 	<scope>source.js</scope>
 </snippet>
