@@ -650,7 +650,7 @@
 }
 "snippet-JSONToFile": {
 	"prefix": "JSONToFile",
-	"body": "```js\nconst fs = require('fs');\nconst JSONToFile = (obj, filename) =>\n  fs.writeFile(`${filename}.json`, JSON.stringify(obj, null, 2));",
+    "body": "const fs = require('fs');\nconst JSONToFile = (obj, filename) =>\n  fs.writeFile(`\\$\\{filename\\}.json`, JSON.stringify(obj, null, 2));",
 	"description": "Writes a JSON object to a file.  Use `fs.writeFile()`, template literals and `JSON.stringify()` to write a `json` object to a `.json` file."
 }
 "snippet-last": {
