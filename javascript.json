@@ -1,5 +1,5 @@
 "snippet-anagrams": {
-	"prefix": "anagrams",
+  "prefix": "anagrams",
 	"body": "const anagrams = str => {\n  if (str.length <= 2) return str.length === 2 ? [str, str[1] + str[0]] : [str];\n  return str\n    .split('')\n    .reduce(\n      (acc, letter, i) =>\n        acc.concat(anagrams(str.slice(0, i) + str.slice(i + 1)).map(val => letter + val)),\n      []\n    );\n};",
 	"description": "⚠️ **WARNING**: This function's execution time increases exponentially with each character. Anything more than 8 to 10 characters will cause your browser to hang as it tries to solve all the different combinations.  Generates all anagrams of a string (contains duplicates).  Use recursion. For each letter in the given string, create all the partial anagrams for the rest of its letters. Use `Array.map()` to combine the letter with each partial anagram, then `Array.reduce()` to combine all anagrams in one array. Base cases are for string `length` equal to `2` or `1`."
 }
@@ -115,13 +115,13 @@
 }
 "snippet-colorize": {
 	"prefix": "colorize",
-	"body": "const colorize = (...args) => ({\n  black: `\x1b[30m${args.join(' ')}`,\n  red: `\x1b[31m${args.join(' ')}`,\n  green: `\x1b[32m${args.join(' ')}`,\n  yellow: `\x1b[33m${args.join(' ')}`,\n  blue: `\x1b[34m${args.join(' ')}`,\n  magenta: `\x1b[35m${args.join(' ')}`,\n  cyan: `\x1b[36m${args.join(' ')}`,\n  white: `\x1b[37m${args.join(' ')}`,\n  bgBlack: `\x1b[40m${args.join(' ')}\x1b[0m`,\n  bgRed: `\x1b[41m${args.join(' ')}\x1b[0m`,\n  bgGreen: `\x1b[42m${args.join(' ')}\x1b[0m`,\n  bgYellow: `\x1b[43m${args.join(' ')}\x1b[0m`,\n  bgBlue: `\x1b[44m${args.join(' ')}\x1b[0m`,\n  bgMagenta: `\x1b[45m${args.join(' ')}\x1b[0m`,\n  bgCyan: `\x1b[46m${args.join(' ')}\x1b[0m`,\n  bgWhite: `\x1b[47m${args.join(' ')}\x1b[0m`\n});",
+	"body": "const colorize = (...args) => ({\n  black: `\\x1b[30m${args.join(' ')}`,\n  red: `\\x1b[31m${args.join(' ')}`,\n  green: `\\x1b[32m${args.join(' ')}`,\n  yellow: `\\x1b[33m${args.join(' ')}`,\n  blue: `\\x1b[34m${args.join(' ')}`,\n  magenta: `\\x1b[35m${args.join(' ')}`,\n  cyan: `\\x1b[36m${args.join(' ')}`,\n  white: `\\x1b[37m${args.join(' ')}`,\n  bgBlack: `\\x1b[40m${args.join(' ')}\\x1b[0m`,\n  bgRed: `\\x1b[41m${args.join(' ')}\\x1b[0m`,\n  bgGreen: `\\x1b[42m${args.join(' ')}\\x1b[0m`,\n  bgYellow: `\\x1b[43m${args.join(' ')}\\x1b[0m`,\n  bgBlue: `\\x1b[44m${args.join(' ')}\\x1b[0m`,\n  bgMagenta: `\\x1b[45m${args.join(' ')}\\x1b[0m`,\n  bgCyan: `\\x1b[46m${args.join(' ')}\\x1b[0m`,\n  bgWhite: `\\x1b[47m${args.join(' ')}\\x1b[0m`\n});",
 	"description": "Add special characters to text to print in color in the console (combined with `console.log()`).  Use template literals and special characters to add the appropriate color code to the string output. For background colors, add a special character that resets the background color at the end of the string."
 }
 "snippet-compact": {
 	"prefix": "compact",
 	"body": "const compact = arr => arr.filter(Boolean);",
-	"description": "Removes falsey values from an array.  Use `Array.filter()` to filter out falsey values (`false`, `null`, `0`, `""`, `undefined`, and `NaN`)."
+	"description": "Removes falsey values from an array.  Use `Array.filter()` to filter out falsey values (`false`, `null`, `0`, `\"\"`, `undefined`, and `NaN`)."
 }
 "snippet-compose": {
 	"prefix": "compose",
@@ -140,7 +140,7 @@
 }
 "snippet-countBy": {
 	"prefix": "countBy",
-	"body": "const countBy = (arr, fn) =>\n  arr.map(typeof fn === 'function' ? fn : val => val[fn]).reduce((acc, val, i) => {\n    acc[val] = (acc[val] || 0) + 1;\n    return acc;\n  }, {});",
+	"body": "const countBy = (arr, fn) =>\n  arr.map(typeof fn === 'function' ? fn : val => val[fn]).reduce((acc, val, i) => {\n    acc[val] = (acc[val] || 0) + 1;\n    return acc;\n  } {});",
 	"description": "Groups the elements of an array based on the given function and returns the count of elements in each group.  Use `Array.map()` to map the values of an array to a function or property name. Use `Array.reduce()` to create an object, where the keys are produced from the mapped results."
 }
 "snippet-countOccurrences": {
@@ -155,7 +155,7 @@
 }
 "snippet-createEventHub": {
 	"prefix": "createEventHub",
-	"body": "const createEventHub = () => ({\n  hub: Object.create(null),\n  emit(event, data) {\n    (this.hub[event] || []).forEach(handler => handler(data));\n  },\n  on(event, handler) {\n    if (!this.hub[event]) this.hub[event] = [];\n    this.hub[event].push(handler);\n  },\n  off(event, handler) {\n    const i = (this.hub[event] || []).findIndex(h => h === handler);\n    if (i > -1) this.hub[event].splice(i, 1);\n  }\n});",
+	"body": "const createEventHub = () => ({\n  hub: Object.create(null),\n  emit(event, data) {\n    (this.hub[event] || []).forEach(handler => handler(data));\n  }\n  on(event, handler) {\n    if (!this.hub[event]) this.hub[event] = [];\n    this.hub[event].push(handler);\n  }\n  off(event, handler) {\n    const i = (this.hub[event] || []).findIndex(h => h === handler);\n    if (i > -1) this.hub[event].splice(i, 1);\n  }\n});",
 	"description": "Creates a pub/sub ([publish–subscribe](https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern)) event hub with `emit`, `on`, and `off` methods.  Use `Object.create(null)` to create an empty `hub` object that does not inherit properties from `Object.prototype`. For `emit`, resolve the array of handlers based on the `event` argument and then run each one with `Array.forEach()` by passing in the data as an argument. For `on`, create an array for the event if it does not yet exist, then use `Array.push()` to add the handler to the array. For `off`, use `Array.findIndex()` to find the index of the handler in the event array and remove it using `Array.splice()`."
 }
 "snippet-currentUrl": {
@@ -175,7 +175,7 @@
 }
 "snippet-deepClone": {
 	"prefix": "deepClone",
-	"body": "const deepClone = obj => {\n  let clone = Object.assign({}, obj);\n  Object.keys(clone).forEach(\n    key => (clone[key] = typeof obj[key] === 'object' ? deepClone(obj[key]) : obj[key])\n  );\n  return clone;\n};",
+	"body": "const deepClone = obj => {\n  let clone = Object.assign({} obj);\n  Object.keys(clone).forEach(\n    key => (clone[key] = typeof obj[key] === 'object' ? deepClone(obj[key]) : obj[key])\n  );\n  return clone;\n};",
 	"description": "Creates a deep clone of an object.  Use recursion. Use `Object.assign()` and an empty object (`{}`) to create a shallow clone of the original. Use `Object.keys()` and `Array.forEach()` to determine which key-value pairs need to be deep cloned."
 }
 "snippet-deepFlatten": {
@@ -265,12 +265,12 @@
 }
 "snippet-escapeHTML": {
 	"prefix": "escapeHTML",
-	"body": "const escapeHTML = str =>\n  str.replace(\n    /[&<>'"]/g,\n    tag =>\n      ({\n        '&': '&amp;',\n        '<': '&lt;',\n        '>': '&gt;',\n        "'": '&#39;',\n        '"': '&quot;'\n      }[tag] || tag)\n  );",
+	"body": "const escapeHTML = str =>\n  str.replace(\n    /[&<>'\"]/g,\n    tag =>\n      ({\n        '&': '&amp;',\n        '<': '&lt;',\n        '>': '&gt;',\n        \"'\": '&#39;',\n        '\"': '&quot;'\n      }[tag] || tag)\n  );",
 	"description": "Escapes a string for use in HTML.  Use `String.replace()` with a regexp that matches the characters that need to be escaped, using a callback function to replace each character instance with its associated escaped character using a dictionary (object)."
 }
 "snippet-escapeRegExp": {
 	"prefix": "escapeRegExp",
-	"body": "const escapeRegExp = str => str.replace(/[.*+?^${}()|[\]\\]/g, '\\\$&');",
+	"body": "const escapeRegExp = str => str.replace(/[.*+?^${}()|[\\]\\]/g, '\\\\$&');",
 	"description": "Escapes a string to use in a regular expression.  Use `String.replace()` to escape special characters."
 }
 "snippet-everyNth": {
@@ -350,7 +350,7 @@
 }
 "snippet-fromCamelCase": {
 	"prefix": "fromCamelCase",
-	"body": "const fromCamelCase = (str, separator = '_') =>\n  str\n    .replace(/([a-z\d])([A-Z])/g, '$1' + separator + '$2')\n    .replace(/([A-Z]+)([A-Z][a-z\d]+)/g, '$1' + separator + '$2')\n    .toLowerCase();",
+	"body": "const fromCamelCase = (str, separator = '_') =>\n  str\n    .replace(/([a-z\\d])([A-Z])/g, '$1' + separator + '$2')\n    .replace(/([A-Z]+)([A-Z][a-z\\d]+)/g, '$1' + separator + '$2')\n    .toLowerCase();",
 	"description": "Converts a string from camelcase.  Use `String.replace()` to remove underscores, hyphens, and spaces and convert words to camelcase. Omit the second argument to use a default `separator` of `_`."
 }
 "snippet-functionName": {
@@ -375,7 +375,7 @@
 }
 "snippet-get": {
 	"prefix": "get",
-	"body": "const get = (from, ...selectors) =>\n  [...selectors].map(s =>\n    s\n      .replace(/\[([^\[\]]*)\]/g, '.$1.')\n      .split('.')\n      .filter(t => t !== '')\n      .reduce((prev, cur) => prev && prev[cur], from)\n  );",
+	"body": "const get = (from, ...selectors) =>\n  [...selectors].map(s =>\n    s\n      .replace(\/\\[([^[\\]]*)]\/g, '.$1.')\n      .split('.')\n      .filter(t => t !== '')\n      .reduce((prev, cur) => prev && prev[cur], from)\n  );",
 	"description": " Retrieve a set of properties indicated by the given selectors from an object.  Use `Array.map()` for each selector, `String.replace()` to replace square brackets with dots, `String.split('.')` to split each selector, `Array.filter()` to remove empty values and `Array.reduce()` to get the value indicated by it."
 }
 "snippet-getDaysDiffBetweenDates": {
@@ -396,7 +396,7 @@
 "snippet-getType": {
 	"prefix": "getType",
 	"body": "const getType = v =>\n  v === undefined ? 'undefined' : v === null ? 'null' : v.constructor.name.toLowerCase();",
-	"description": "Returns the native type of a value.  Returns lowercased constructor name of value, `"undefined"` or `"null"` if value is `undefined` or `null`."
+	"description": "Returns the native type of a value.  Returns lowercased constructor name of value, `\"undefined\"` or `\"null\"` if value is `undefined` or `null`."
 }
 "snippet-getURLParameters": {
 	"prefix": "getURLParameters",
@@ -452,7 +452,8 @@
 	"prefix": "httpGet",
 	"body": "const httpGet = (url, callback, err = console.error) => {\n  const request = new XMLHttpRequest();\n  request.open('GET', url, true);\n  request.onload = () => callback(request.responseText);\n  request.onerror = () => err(request);\n  request.send();\n};",
 	"description": "Makes a `GET` request to the passed URL.  Use [`XMLHttpRequest`](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest) web api to make a `get` request to the given `url`. Handle the `onload` event, by calling the given `callback` the `responseText`. Handle the `onerror` event, by running the provided `err` function. Omit the third argument, `err`, to log errors to the console's `error` stream by default."
-}"snippet-httpPost": {
+}
+"snippet-httpPost": {
 	"prefix": "httpPost",
 	"body": "const httpPost = (url, data, callback, err = console.error) => {\n  const request = new XMLHttpRequest();\n  request.open('POST', url, true);\n  request.setRequestHeader('Content-type', 'application/json; charset=utf-8');\n  request.onload = () => callback(request.responseText);\n  request.onerror = () => err(request);\n  request.send(data);\n};",
 	"description": "Makes a `POST` request to the passed URL.  Use [`XMLHttpRequest`](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest) web api to make a `post` request to the given `url`. Set the value of an `HTTP` request header with `setRequestHeader` method. Handle the `onload` event, by calling the given `callback` the `responseText`. Handle the `onerror` event, by running the provided `err` function. Omit the third argument, `data`, to send no data to the provided `url`. Omit the fourth argument, `err`, to log errors to the console's `error` stream by default."
@@ -649,7 +650,7 @@
 }
 "snippet-JSONToFile": {
 	"prefix": "JSONToFile",
-	"body": "```js\nconst fs = require('fs');\nconst JSONToFile = (obj, filename) =>\n  fs.writeFile(`${filename}.json`, JSON.stringify(obj, null, 2));",
+    "body": "const fs = require('fs');\nconst JSONToFile = (obj, filename) =>\n  fs.writeFile(`\\$\\{filename\\}.json`, JSON.stringify(obj, null, 2));",
 	"description": "Writes a JSON object to a file.  Use `fs.writeFile()`, template literals and `JSON.stringify()` to write a `json` object to a `.json` file."
 }
 "snippet-last": {
@@ -719,7 +720,7 @@
 }
 "snippet-median": {
 	"prefix": "median",
-	"body": ""snippet-maxN": {\n\t"prefix": "maxN",\n\t"body": "const maxN = (arr, n = 1) => [...arr].sort((a, b) => b - a).slice(0, n);",\n\t"description": "Returns the `n` maximum elements from the provided array. If `n` is greater than or equal to the provided array's length, then return the original array(sorted in descending order).  Use `Array.sort()` combined with the spread operator (`...`) to create a shallow clone of the array and sort it in descending order. Use `Array.slice()` to get the specified number of elements. Omit the second argument, `n`, to get a one-element array."\n}",
+	"body": "const median = arr => { \n   const mid = Math.floor(arr.length / 2),\n     nums = [...arr].sort((a, b) => a - b);\n   return arr.length % 2 !== 0 ? nums[mid] : (nums[mid - 1] + nums[mid]) / 2;\n };",
 	"description": "Returns the median of an array of numbers.  Find the middle of the array, use `Array.sort()` to sort the values. Return the number at the midpoint if `length` is odd, otherwise the average of the two middle numbers."
 }
 "snippet-memoize": {
@@ -814,7 +815,7 @@
 }
 "snippet-palindrome": {
 	"prefix": "palindrome",
-	"body": "const palindrome = str => {\n  const s = str.toLowerCase().replace(/[\W_]/g, '');\n  return (\n    s ===\n    s\n      .split('')\n      .reverse()\n      .join('')\n  );\n};",
+	"body": "const palindrome = str => {\n  const s = str.toLowerCase().replace(/[\\W_]/g, '');\n  return (\n    s ===\n    s\n      .split('')\n      .reverse()\n      .join('')\n  );\n};",
 	"description": "Returns `true` if the given string is a palindrome, `false` otherwise.  Convert string `String.toLowerCase()` and use `String.replace()` to remove non-alphanumeric characters from it. Then, `String.split('')` into individual characters, `Array.reverse()`, `String.join('')` and compare to the original, unreversed string, after converting it `String.tolowerCase()`."
 }
 "snippet-parseCookie": {
@@ -949,7 +950,7 @@
 }
 "snippet-removeNonASCII": {
 	"prefix": "removeNonASCII",
-	"body": "const removeNonASCII = str => str.replace(/[^\x20-\x7E]/g, '');",
+	"body": "const removeNonASCII = str => str.replace(/[^\\x20-\\x7E]/g, '');",
 	"description": "Removes non-printable ASCII characters.  Use a regular expression to remove non-printable ASCII characters."
 }
 "snippet-reverseString": {
@@ -1214,7 +1215,7 @@
 }
 "snippet-unescapeHTML": {
 	"prefix": "unescapeHTML",
-	"body": "const unescapeHTML = str =>\n  str.replace(\n    /&amp;|&lt;|&gt;|&#39;|&quot;/g,\n    tag =>\n      ({\n        '&amp;': '&',\n        '&lt;': '<',\n        '&gt;': '>',\n        '&#39;': "'",\n        '&quot;': '"'\n      }[tag] || tag)\n  );",
+	"body": "const unescapeHTML = str =>\n  str.replace(\n    /&amp;|&lt;|&gt;|&#39;|&quot;/g,\n    tag =>\n      ({\n        '&amp;': '&',\n        '&lt;': '<',\n        '&gt;': '>',\n        '&#39;': \"'\",\n        '&quot;': '\"'\n      }[tag] || tag)\n  );",
 	"description": "Unescapes escaped HTML characters.  Use `String.replace()` with a regex that matches the characters that need to be unescaped, using a callback function to replace each escaped character instance with its associated unescaped character using a dictionary (object)."
 }
 "snippet-unfold": {
@@ -1244,7 +1245,7 @@
 }
 "snippet-untildify": {
 	"prefix": "untildify",
-	"body": "const untildify = str => str.replace(/^~(\$|\/|\\)/, `${require('os').homedir()}$1`);",
+	"body": "const untildify = str => str.replace(/^~(\\$|\/|\\)/, `${require('os').homedir()}$1`);",
 	"description": "Converts a tilde path to an absolute path.  Use `String.replace()` with a regular expression and `OS.homedir()` to replace the `~` in the start of the path with the home directory."
 }
 "snippet-unzip": {
@@ -1259,12 +1260,12 @@
 }
 "snippet-URLJoin": {
 	"prefix": "URLJoin",
-	"body": "const URLJoin = (...args) =>\n  args\n    .join('/')\n    .replace(/[\/]+/g, '/')\n    .replace(/^(.+):\//, '$1://')\n    .replace(/^file:/, 'file:/')\n    .replace(/\/(\?|&|#[^!])/g, '$1')\n    .replace(/\?/g, '&')\n    .replace('&', '?');",
+	"body": "const URLJoin = (...args) =>\n  args\n    .join('/')\n    .replace(/[\/]+/g, '/')\n    .replace(/^(.+):\//, '$1://')\n    .replace(/^file:/, 'file:/')\n    .replace(/\/(\\?|&|#[^!])/g, '$1')\n    .replace(/\\?/g, '&')\n    .replace('&', '?');",
 	"description": "Joins all given URL segments together, then normalizes the resulting URL.  Use `String.join('/')` to combine URL segments, then a series of `String.replace()` calls with various regexps to normalize the resulting URL (remove double slashes, add proper slashes for protocol, remove slashes before parameters, combine parameters with `'&'` and normalize first parameter delimiter)."
 }
 "snippet-URLJoin": {
 	"prefix": "URLJoin",
-	"body": "const URLJoin = (...args) =>\n  args\n    .join('/')\n    .replace(/[\/]+/g, '/')\n    .replace(/^(.+):\//, '$1://')\n    .replace(/^file:/, 'file:/')\n    .replace(/\/(\?|&|#[^!])/g, '$1')\n    .replace(/\?/g, '&')\n    .replace('&', '?');",
+	"body": "const URLJoin = (...args) =>\n  args\n    .join('/')\n    .replace(/[\/]+/g, '/')\n    .replace(/^(.+):\//, '$1://')\n    .replace(/^file:/, 'file:/')\n    .replace(/\/(\\?|&|#[^!])/g, '$1')\n    .replace(/\\?/g, '&')\n    .replace('&', '?');",
 	"description": "Joins all given URL segments together, then normalizes the resulting URL.  Use `String.join('/')` to combine URL segments, then a series of `String.replace()` calls with various regexps to normalize the resulting URL (remove double slashes, add proper slashes for protocol, remove slashes before parameters, combine parameters with `'&'` and normalize first parameter delimiter)."
 }
 "snippet-UUIDGeneratorBrowser": {
@@ -1299,7 +1300,7 @@
 }
 "snippet-yesNo": {
 	"prefix": "yesNo",
-	"body": "const yesNo = (val, def = false) =>\n  /^(y|yes)\$/i.test(val) ? true : /^(n|no)\$/i.test(val) ? false : def;",
+	"body": "const yesNo = (val, def = false) =>\n  /^(y|yes)\\$/i.test(val) ? true : /^(n|no)\\$/i.test(val) ? false : def;",
 	"description": "Returns `true` if the string is `y`/`yes` or `false` if the string is `n`/`no`.  Use `RegExp.test()` to check if the string evaluates to `y/yes` or `n/no`. Omit the second argument, `def` to set the default answer as `no`."
 }
 "snippet-zip": {
